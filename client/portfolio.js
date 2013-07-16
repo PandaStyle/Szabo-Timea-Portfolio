@@ -4,5 +4,5 @@ $(window).load(function() {
         directionNav: true
     });
 
-    $('.about').addClass("active");
+    $('.pf-about').addClass("active");
 });

@@ -4,17 +4,16 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Cabin|Montserrat|Lobster Two:400,300,700" media="screen" rel="stylesheet" type="text/css" />
-    
-    <!-- Typekit fonts require an account and a kit containing the fonts used. see https://typekit.com/plans for details. <script type="text/javascript" src="//use.typekit.net/YOUR_KIT_ID.js"></script>
-  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
--->
-   
 
     <title>CR Home</title>
   </head>
-  
-  <body>
-    <div class="main-container">
+
+<body>    
+{{>bq3}}
+</body>
+
+<template name="main">
+<div class="main-container">
         <div class="title">
             <h1>Timea Szabo</h1>
             <h2>Architect</h2>
@@ -48,99 +47,94 @@
         <div class="container grid">
             <ul class="thumbnails">
                 <li class="span4">
-                    <a class="thumbnail" href="portfolio/bq/pf.html">
+                    <a class="thumbnail" href="/interschool">
                         <div class="hoverbg">
                             <div class="glass"></div>
-                            <h3>BiQuadro 1</h3>
+                            <h3>International School</h3>
                         </div>
-
-                            <img src="/portfolio/cover101.jpg" class="image">
-                    
+                            <img src="/portfolio/1_International_school/00_index.jpg" class="image">
                     </a>
                 </li>
                 <li class="span4">
-                    <div class="thumbnail">
+                   <a class="thumbnail" href="/debrecen">
                         <div class="hoverbg">
                             <div class="glass"></div>
-                            <h3>Térkompozíció</h3>
+                            <h3>Debrecen Stadium</h3>
                         </div>
                   
-                            <img src="/portfolio/cover102.jpg" class="image">
+                            <img src="/portfolio/2_Debrecen_Stadium/00_index.jpg" class="image">
                         
-                    </div>
+                    </a>
                 </li>
                 <li class="span4">
-                    <div class="thumbnail">
+                    <a class="thumbnail" href="/valley">
                         <div class="hoverbg">
                             <div class="glass"></div>
-                            <h3>Térkompozíció</h3>
+                            <h3>Valley Residencies</h3>
                         </div>
-                     
-                            <img src="/portfolio/cover103.jpg" class="image">
-                    
-                    </div>
+                           <img src="/portfolio/3_Valley_residencies/00_index.jpg" class="image">
+                    </a>
                 </li>
             </ul>
             <ul class="thumbnails">
                 <li class="span4">
-                    <div class="thumbnail">
+                    <a class="thumbnail" href="/eden">
                         <div class="hoverbg">
                             <div class="glass"></div>
-                            <h3>Térkompozíció</h3>
+                            <h3>Eden Parc</h3>
                         </div>
-                        <img src="/portfolio/cover4.png" class="image">
-                    </div>
+                         <img src="/portfolio/4_Eden_Parc/00_index.jpg" class="image">
+                    </a>
                 </li>
                 <li class="span4">
-                    <div class="thumbnail">
+                    <a class="thumbnail" href="/felcra">
                         <div class="hoverbg">
                             <div class="glass"></div>
-                            <h3>Térkompozíció</h3>
+                            <h3>Felcra University</h3>
                         </div>
-                        <img src="/portfolio/cover5.png" class="image">
-                    </div>
+                        <img src="/portfolio/5_Felcra_University/00_index.jpg" class="image">
+                    </a>
                 </li>
                 <li class="span4">
-                    <div class="thumbnail">
+                    <a class="thumbnail" href="/interschool">
                         <div class="hoverbg">
                             <div class="glass"></div>
                             <h3>Térkompozíció</h3>
                         </div>
                         <img src="/portfolio/cover6.png" class="image">
-                    </div>
+                    </a>
                 </li>
             </ul>
             <ul class="thumbnails">
                 <li class="span4">
-                    <div class="thumbnail">
+                    <a class="thumbnail" href="/interschool">
                         <div class="hoverbg">
                             <div class="glass"></div>
                             <h3>Térkompozíció</h3>
                         </div>
                         <img src="/portfolio/cover7.png" class="image">
-                    </div>
+                    </a>
                 </li>
                 <li class="span4">
-                    <div class="thumbnail">
+                    <a class="thumbnail" href="/interschool">
                         <div class="hoverbg">
                             <div class="glass"></div>
                             <h3>Térkompozíció</h3>
                         </div>
                         <img src="/portfolio/cover8.png" class="image">
-                    </div>
+                    </a>
                 </li>
                 <li class="span4">
-                    <div class="thumbnail">
+                    <a class="thumbnail" href="/interschool">
                         <div class="hoverbg">
                             <div class="glass"></div>
                             <h3>Térkompozíció</h3>
                         </div>
                         <img src="/portfolio/cover9.png" class="image">
-                    </div>
+                    </a>
                 </li>
             </ul>
         </div>
-
     </div>
     <div class="container-fluid contact">
          <div class="container text-center">
@@ -164,57 +158,33 @@
             </a>
         </div>
     </div>
+</template>
 
 
-
-    <script type="text/javascript">
-       $(function () {
-            var stickyPanelOptions = {
-                topPadding: 0,
-                afterDetachCSSClass: "BoxGlow_Grey2",
-                savePanelSpace: true,
-                onDetached: function (detachedPanel, spacerPanel) {
-//                    detachedPanel.html(detachedPanel.html() + " has been detached!");
-//                    spacerPanel.css("background-color", "#1000ff");
-                    console.log("detach");
-                },
-                onReAttached: function (detachedPanel) {
-//                    detachedPanel.html(detachedPanel.html().replace(" has been detached!", ""));
-                    console.log("redetach");
-                },
-                parentSelector: null
-            };
-
-           $('.navbar').stickyPanel(stickyPanelOptions);
-
-           $("#scrollto").click(function (){
-                   $.scrollTo('.links', 1500, {easing:'easeInOutExpo'});
-           });
-           $(".nav-me").click(function (){
-                   $.scrollTo('.about', 1500, {easing:'easeInOutExpo'});
-           });
-           $(".nav-pf").click(function (){
-                   $.scrollTo('.portfolio', 1500, {easing:'easeInOutExpo'});
-           });
-           $(".nav-contact").click(function (){
-                   $.scrollTo('.contact', 1500, {easing:'easeInOutExpo'});
-           });
+<template name="bq3">
+{{#if isCurrentPage "homePage"}}
+    {{>main}}
+{{/if}}
+{{#if isCurrentPage "kingspan"}}
+    {{>kingspan}}
+{{/if}}
+{{#if isCurrentPage "interschool"}}
+    {{>interschool}}
+{{/if}}
+{{#if isCurrentPage "debrecen"}}
+    {{>debrecen}}
+{{/if}}
+{{#if isCurrentPage "valley"}}
+    {{>valley}}
+{{/if}}
+{{#if isCurrentPage "eden"}}
+    {{>eden}}
+{{/if}}
+{{#if isCurrentPage "felcra"}}
+    {{>felcra}}
+{{/if}}
+</template>
 
 
-           $('.hover').hover(function(){
-               $(this).addClass('flip');
-           },function(){
-               $(this).removeClass('flip');
-           });
-
-       });
-
-
-
-
-
-    </script>
-
-  </body>
 
 

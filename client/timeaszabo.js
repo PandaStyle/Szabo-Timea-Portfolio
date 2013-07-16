@@ -37,5 +37,40 @@ if (Meteor.isClient) {
            },function(){
                $(this).removeClass('flip');
            });
+
+   Session.set('currentPage', 'homePage');
+			
   });
 }
+
+var Router = Backbone.Router.extend({
+  routes: {
+    "":                 "main", //this will be http://your_domain/
+    ":pageId":           "pf"  // http://your_domain/help
+  },
+
+  main: function() {
+    Session.set('currentPage', 'homePage');
+  },
+
+  pf: function(pageId) {
+    var old  = Session.get('currentPage');
+    if(old != pageId){
+    	Session.set('currentPage', pageId);
+    }
+  }
+});
+
+var app = new Router;
+Meteor.startup(function () {
+  Backbone.history.start({pushState: true});
+});
+
+
+
+Template.bq3.isCurrentPage = function(page){
+	return Session.get('currentPage') == page;
+}
+
+
+
