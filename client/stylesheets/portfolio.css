@@ -8,8 +8,8 @@ body{
 }
 
 
-.pf-container h2, h1, h5{
-     font-family: 'Lobster Two', sans-serif;
+.pf-container h2, .pf-container h1, .pf-container h5{
+     font-family: 'Cabin', sans-serif;
  }
 
 .pf-container .main{
@@ -48,6 +48,7 @@ body{
 }
 
 .pf-container .pf-about h5{
+    line-height: 1.2em;
     opacity: 0;
     font-size: 3em;
     color: #ffffff;

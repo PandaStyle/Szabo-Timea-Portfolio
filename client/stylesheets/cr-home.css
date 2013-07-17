@@ -69,17 +69,13 @@
      text-align: center;
  }
  .main-container h1{
-     font-size: 36px;
-     line-height: 36px;
-
-    border-bottom: 2px solid;
-
-     padding: 15px 20px;
-     color: rgba(255, 255, 255, 1);
-     letter-spacing: 6px;
-     text-transform: uppercase;
-     display: inline-block;
-     margin-bottom: 45px;
+font-size: 72px;
+line-height: 90px;
+border-bottom: 2px solid;
+padding: 15px 20px;
+color: rgba(255, 255, 255, 1);
+display: inline-block;
+margin-bottom: 21px;
  }
  .main-container h2{
     font-family: 'Montserrat', sans-serif;
@@ -134,7 +130,8 @@
  }
 
  .about p{
-     line-height: 30px;
+    font-size: 20px;
+     line-height: 40px;
  }
  .about .personal{
      text-align: center;

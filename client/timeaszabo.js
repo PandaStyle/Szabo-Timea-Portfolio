@@ -31,13 +31,6 @@ if (Meteor.isClient) {
                    $.scrollTo('.contact', 1500, {easing:'easeInOutExpo'});
            });
 
-
-           $('.hover').hover(function(){
-               $(this).addClass('flip');
-           },function(){
-               $(this).removeClass('flip');
-           });
-
    Session.set('currentPage', 'homePage');
 			
   });
