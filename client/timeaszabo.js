@@ -1,6 +1,11 @@
 if (Meteor.isClient) {
   Meteor.startup(function () {
-    var stickyPanelOptions = {
+   Session.set('currentPage', 'homePage');
+  });
+}
+
+Template.main.rendered = function(){
+  var stickyPanelOptions = {
                 topPadding: 0,
                 afterDetachCSSClass: "BoxGlow_Grey2",
                 savePanelSpace: true,
@@ -22,19 +27,16 @@ if (Meteor.isClient) {
                    $.scrollTo('.links', 1500, {easing:'easeInOutExpo'});
            });
            $(".nav-me").click(function (){
-                   $.scrollTo('.about', 1500, {easing:'easeInOutExpo'});
+                   $.scrollTo('.about', 1500, {easing:'easeInOutExpo', offset: {top: -80, left:0} });
            });
            $(".nav-pf").click(function (){
-                   $.scrollTo('.portfolio', 1500, {easing:'easeInOutExpo'});
+                   $.scrollTo('.portfolio', 1500, {easing:'easeInOutExpo', offset: {top: -80, left:0} });
            });
            $(".nav-contact").click(function (){
                    $.scrollTo('.contact', 1500, {easing:'easeInOutExpo'});
            });
-
-   Session.set('currentPage', 'homePage');
-			
-  });
 }
+
 
 var Router = Backbone.Router.extend({
   routes: {
