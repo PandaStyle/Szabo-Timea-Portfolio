@@ -37,10 +37,10 @@ Template.main.rendered = function(){
            });
 
           $("#personal").hover(function (){
-                   $(this).attr("src", "/personal_c.jpg")
+                   $(this).attr("src", "/szines.jpg")
               },
               function () {
-                    $(this).attr("src", "/personal.jpg")        
+                    $(this).attr("src", "/ff.jpg")
               }
 
             );

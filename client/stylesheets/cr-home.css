@@ -65,21 +65,13 @@
      padding-top: 200px;
      text-align: center;
  }
- .main-container h1{
-    letter-spacing: 5px;
-     font-family: 'Cabin', sans-serif;
-    text-transform: uppercase;
-    font-weight: 400;
-font-size: 72px;
-line-height: 90px;
-border-bottom: 2px solid;
-padding: 15px 20px;
-color: rgba(255, 255, 255, 1);
-display: inline-block;
-margin-bottom: 21px;
+ .main-container .title img{
+     width: 50%;
+     margin-bottom: 21px;
  }
+
  .main-container h2{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
      font-size: 100px;
      line-height: 100px;
      color: #fff;
