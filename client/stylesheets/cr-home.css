@@ -1,7 +1,7 @@
  body {
    padding-left: 0;
    padding-right: 0;
-   font-family: 'Montserrat', sans-serif;
+   font-family: 'Raleway', sans-serif;
    font-size: 16px;
  }
 
@@ -13,9 +13,6 @@
     letter-spacing: 3px;
  }
 
- p {
-    font-family: 'Cabin', sans-serif;
- }
 
  /* ---- overwrites --- */
  .row-fluid{
@@ -97,9 +94,7 @@ margin-bottom: 21px;
  }
 
  .main-container #scrollTo:hover{
-    background-color: #f26c51;
-    opacity: 0.5;
-
+    
  }
 
  .navbar {
@@ -124,18 +119,21 @@ margin-bottom: 21px;
    height: 80px;
  }
  .navbar .links span{
+    font-size: 22px;
+    font-weight: 400;
      margin: 0 50px;
      cursor: pointer;
  }
  .navbar  span:hover {
-   border-bottom: 2px #000 solid;
+   border-bottom: 2px #f26c51 solid;
+     color: #f26c51;
  }
 
  .about {
      background-color: #F7F4ED;
  }
 
- .about h2 {
+ .about h2, .about a {
      color: #f26c51;
  }
 
@@ -236,7 +234,9 @@ margin-bottom: 21px;
      opacity: 1;
  }
 
- .portfolio .thumbnail .hoverbg h3 {
+.portfolio .thumbnail .hoverbg h3 {
+     font-family: 'Raleway', sans-serif;
+    font-weight: 400;
      margin-top: 200px;
      text-align: center;
      color: #ffffff;
@@ -247,13 +247,15 @@ margin-bottom: 21px;
      -moz-transition: all 0.3s ease-out;
      -o-transition: all 0.3 s ease-out;
      -ms-transition: all 0.3s ease-out;
- }
+}
 
  .portfolio .thumbnail:hover .hoverbg h3 {
      margin-top: 180px;
      bottom: 30px;
      opacity: 1;
  }
+
+
 
  .contact {
      background-color: #F7F4ED;

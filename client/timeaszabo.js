@@ -35,6 +35,16 @@ Template.main.rendered = function(){
            $(".nav-contact").click(function (){
                    $.scrollTo('.contact', 1500, {easing:'easeInOutExpo'});
            });
+
+          $("#personal").hover(function (){
+                   $(this).attr("src", "/personal_c.jpg")
+              },
+              function () {
+                    $(this).attr("src", "/personal.jpg")        
+              }
+
+            );
+
 }
 
 

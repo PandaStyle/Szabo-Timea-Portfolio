@@ -16,6 +16,8 @@
     -moz-transition: background 0.2s, color 0.2s;
     transition: background 0.2s, color 0.2s;
     border-radius: 50%;
+    opacity: 0.5;
+    color: #fff;
 }
 
 [data-icon]:before {
@@ -51,8 +53,8 @@
 
 /* Effect 1a */
 [data-icon]:hover {
-    background: rgba(255,255,255,1);
-    color: #41ab6b;
+    color: #f26c51;
+    opacity: 1;
 }
 
 [data-icon]:hover:after {
@@ -62,6 +64,8 @@
     transform: scale(1);
     opacity: 1;
 }
+
+
 
 
 
