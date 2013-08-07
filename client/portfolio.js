@@ -9,7 +9,8 @@ Template.valley.rendered = init;
 Template.vivienda.rendered = init;
 Template.detached.rendered = init;
 Template.bicycle.rendered = init;
-
+Template.incubator.rendered = init;
+Template.sketches.rendered = init;
 
 
 
