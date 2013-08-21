@@ -159,3 +159,13 @@ body{
 .pf-container .back i{
     padding-right: 5px
 }
+
+.flexslider .slides img {
+    width: auto;
+    margin: 0 auto;
+
+}
+
+.flexslider {
+    background: none;
+}

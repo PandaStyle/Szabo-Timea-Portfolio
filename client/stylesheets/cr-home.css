@@ -135,9 +135,13 @@
  .about .personal{
      text-align: center;
  }
- .about img {
+ .about img#personal {
      border-radius: 50%;
      width: 60%;
+ }
+ .about img#logo-aboutme {
+     padding-bottom: 30px;
+width: 35%;
  }
 
 
