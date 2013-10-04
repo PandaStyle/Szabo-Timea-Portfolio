@@ -120,16 +120,13 @@
      color: #f26c51;
  }
 
- .about {
-     background-color: #F7F4ED;
- }
 
  .about h2, .about a {
      color: #f26c51;
  }
 
  .about p{
-    font-size: 20px;
+ 
      line-height: 40px;
  }
  .about .personal{
@@ -167,8 +164,15 @@ width: 35%;
      max-width: 300px;
      position: relative;
      border: none;
-     
  }
+
+ .portfolio li {
+     margin: 0;
+ }
+
+ .portfolio ul {
+     margin: 0 0 0 25px;
+ }    
 
 .portfolio .thumbnail .ph{
      border: none;
@@ -252,8 +256,9 @@ width: 35%;
 
 
 
- .contact {
-     background-color: #F7F4ED;
+ .contact,
+ .about {
+     background-color: #FFFFFF;
  }
 
  .contact article h2{
