@@ -37,13 +37,19 @@ Template.main.rendered = function(){
            });
 
           $("#personal").hover(function (){
-                   $(this).attr("src", "/szines.jpg")
+                   $(this).attr("src", "/profilkep2.jpg")
               },
               function () {
-                    $(this).attr("src", "/ff.jpg")
+                    $(this).attr("src", "/profilkep_ff2.jpg")
               }
-
             );
+
+            $("#personal").click(function(){
+               window.open(
+                  'http://www.linkedin.com/pub/szabo-timea/33/45a/68',
+                  '_blank' // <- This is what makes it open in a new window.
+                );
+            });
 
 }
 

@@ -133,12 +133,17 @@
      text-align: center;
  }
  .about img#personal {
+    cursor: pointer;
      border-radius: 50%;
      width: 60%;
  }
  .about img#logo-aboutme {
      padding-bottom: 30px;
 width: 35%;
+ }
+
+ .about .buttons .button {
+    margin: 1em ;
  }
 
 
